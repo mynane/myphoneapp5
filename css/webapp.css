@@ -1,0 +1,119 @@
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, abbr, acronym, address, big, 
+cite, code, del, dfn, em, font, img, 
+ins, kbd, q, s, samp, small, strike, 
+strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td, 
+center, u, b, i { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    outline: 0; 
+    font-weight: normal; 
+    font-style: normal; 
+    font-size: 100%; 
+    font-family: inherit; 
+    vertical-align: baseline 
+} 
+:focus { 
+    outline: 0 
+} 
+ol, ul { 
+    list-style: none 
+} 
+table { 
+    border-collapse: collapse; 
+    border-spacing: 0 
+} 
+blockquote:before, blockquote:after, q:before, q:after { 
+    content: “” 
+} 
+blockquote, q { 
+    quotes: “” “” 
+} 
+input, textarea { 
+    margin: 0; 
+    padding: 0 
+} 
+hr { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    color: #000; 
+    background-color: #000; 
+    height: 1px 
+}
+a,a:hover{
+    text-decoration: none;
+}
+html{ 
+    line-height: 1;
+    height:100%;
+    font-size:12px;
+    font-family: Arial "微软雅黑"；
+}
+#header_container{
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: #349601;
+    height:4rem;
+    line-height: 4rem;
+    z-index: 10;
+    width:100%;
+}
+.header{
+    width:100%;
+}
+.backwards,.logo,.dl{
+    float:left;
+}
+.backwards{
+    width:10%;
+    height: 100%;
+}
+.logo{
+    width:70%;
+}
+#logo{
+    width:17rem;
+    margin:0 auto;
+}
+.dl{
+    width:20%;
+}
+.backwards a{
+    float:left;
+    height:4rem;
+    padding:0.5rem;
+}
+.dl button{
+    border:0;
+    padding:0;
+    background: transparent;
+    float: right;
+}
+.dl img{
+    width:5rem;
+}
+.logo img{
+   width:100%;
+}
+
+.col-xs-nav dl {
+  margin: 0; }
+
+.col-xs-nav dl dt, .col-xs-nav dl dd {
+  text-align: center;
+  width: 100%;
+  float: left; }
+
+.col-xs-nav dl dt {
+  margin: 0.5rem 0 0.1rem 0; }
+
+.col-xs-nav dl dd {
+  font-size: 1.2rem;
+  color: #666666;
+  margin-bottom: 0.2rem; }

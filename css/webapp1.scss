@@ -1,0 +1,299 @@
+
+
+/*设置背景颜色*/
+.container-fluid,.container{
+	background-color:#f8f8f8;
+}
+
+/*search css*/ 
+#search-container{
+    position:relative;
+    background-color:#f8f8f8; 
+}
+#search{
+	    margin: 4.5rem 0 0.4rem 0;
+	    width:100%;
+	    border:1px solid #ffffff;
+	    position:relative;
+	    box-shadow: 1px 2px 2px #eee;
+		
+	}
+#searchText{
+ width:100%;
+ height:4rem;
+ padding:1rem;
+ border-top:1px solid red;
+ border-left:1px solid red;
+}
+#search-btn{
+    border:none;
+    border-right:1px solid #ddd;
+    border-top:1px solid #ddd;
+    background-color:#f9f9f9;
+    width:4rem;
+    height:4rem;
+    position:absolute;
+    top:0px;
+    right:-1px;
+}
+/*search End*/ 
+
+/*carousel*/ 
+#img_carousel{
+	 width:100%; 
+}
+#ul_carousel{
+    width:100%; 
+    position:relative;
+    margin:0;
+    overflow: hidden;
+}
+#ul_carousel li{
+    width:100%;
+    position:absolute;
+    opacity: 0;
+    filter:alpha(opacity=0);
+    display: none;
+}
+#ul_carousel img{
+    width:100%;
+}
+.img_index{
+    position:absolute;
+    margin-left:-1.2rem;
+    line-height: 1.1rem;
+    span{
+	    display:inline-block;
+	    width:1.1rem;
+	    height:1.1rem;
+	    border:1px solid #f9f9f9;
+	    background-color:#fe9931;
+	    border-radius: 1.1rem;
+	}
+	.current {
+   		background-color:#2b8c00; 
+	}
+
+}
+
+/*carousel end*/ 
+
+/*nav_container*/ 
+#nav_container{
+	width: 100%;
+    margin:0.5rem 0;
+}
+.col-xs-nav{
+    width:25%;
+    float:left;
+    padding:0;
+    margin:0;
+}
+.col-xs-nav dl{
+    width:100%;
+    overflow:hidden; 
+    cursor:pointer;
+}
+#goodsSort,#recommend,#myself,#collect{
+    border-top:1px solid #ddd;
+    border-left:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+}
+#collect{
+    border-right:1px solid #ddd;
+}
+
+#nav_container{
+    
+    margin:0.5rem 0;
+    overflow: hidden;
+}
+.col-xs-nav dl{
+    margin:0;
+}
+.col-xs-nav dl dt,.col-xs-nav dl dd{
+    text-align: center;
+    width:100%;
+    float:left;
+}
+.col-xs-nav dl dt{
+    margin:0.5rem 0 0.1rem 0;
+}
+.col-xs-nav dl dd{
+    font-size:1.2rem;
+    color:#666666;
+    margin-bottom:0.2rem;
+}
+
+.box_goods{
+    width:100%;
+    border-left:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    overflow: hidden;
+}
+
+.goods_container{
+	margin:0.5rem 0;
+	box-shadow: 2px 1px 3px rgba(0,0,0,0.2);
+}
+.lGoods img,.sGoods img{
+    width:100%;
+}
+.tiltle{
+    width:100%;
+    background-color: #fff;
+    color:#444;
+    font-size:1.4rem;
+    padding:0.9rem 0 0.9rem 0.9rem;
+}
+.lGoods{
+    width:100%;
+    position:relative;
+    overflow: hidden;
+}
+.sGoods{
+     position:relative;
+    width:50%;
+    float:left;
+    overflow: hidden;
+}
+.sGoods .box_desc{
+    left:0.4rem;
+}
+.tiltle,.lGoods,.sGoods{
+    border-right:1px solid #ddd;
+    border-top:1px solid #ddd;
+}
+.box_desc{
+    position:absolute;
+    top:1rem;
+    left:0.8rem;
+}
+.box_desc p{
+    margin:0.2rem;
+}
+.title{
+    font-size: 1.2rem;
+    color:#333;
+    font-family: Arial "微软雅黑";
+}
+.describe{
+    color:#666;
+    font-size:0.7rem;
+}
+.price{
+    color:#666;
+    font-size: 1.2rem;
+}
+.price_number{
+    color:#f93;
+}
+.col-xs-nav2 dl{
+    border:none;
+    border-right:1px solid #e8e6d7; 
+}
+
+.col-xs-nav2{
+    background-color:#fDF7D7;
+}
+#browsing_history{
+    border-right:none;
+}
+#footer_container{
+    z-index:100;
+    position:fixed;
+    width:100%;
+    left:0;
+    bottom: 0;
+    box-shadow: 5px 0 5px rgba(0,0,0,0.5);
+}
+
+//login页
+#loginPgae{
+    width:100%;
+    height:100%;
+}
+#welText{
+    background-color:#dedede;
+    text-align: center;
+}
+#welText h3{
+    margin:0;
+    padding:0;
+    font-size:1.3rem;
+    font-family: Arial "微软雅黑";
+    padding:0.6rem 0;
+    color:#333;
+}
+#khImg{
+    width:100%;
+    margin:4rem 0 1rem 0;
+}
+#khImg img{
+    width:60%;
+    margin-left: 20%;
+}
+
+#ioginform{
+    margin-top: 2rem;
+}
+
+.name,.psw{
+    border:1px solid #c8c8c8;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    height:3.5rem;
+    background-color: #fff;
+    margin:1rem 0;
+}
+.name label,.psw label{
+    width:20%;
+    height:100%;
+    margin:0;
+    text-align: center;
+    color:#888;
+    font-weight: normal;
+}
+.name input,.psw input{
+    margin:0;
+    width:80%;
+    height:100%;
+    border:none;
+}
+
+#submit{
+    width:100%;
+    text-align: center;
+}
+
+#submit input{
+    width: 40%;
+    border:none;
+    background-color: #99CCCC;
+    border-radius:0.3rem;
+    color:white;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    cursor: not-allowed;
+    padding:0.5rem 0;
+    margin:0.5rem 0;
+}
+
+#aLinkZC{
+    width:100%;
+    text-align: center;
+    margin:1rem 0;
+
+}
+#aLinkZC a{
+    font-size: 1.1rem;
+    color:#489c06;
+}
+
+
+
+
+
+
+
+

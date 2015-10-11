@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>webapp</title>
+	<link rel="stylesheet" type="text/css" href="css/animate/animate.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/webapp1.css"/>
+	<link rel="stylesheet" type="text/css" href="css/webapp.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/site.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<style>
+	#header_container{
+		 position:fixed;
+  		 top:0;
+   		 left:0;
+	}
+	</style>
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script type="text/javascript" src="js/zepto/zepto.min.js"></script>
+	<script type="text/javascript" src="js/zepto/zepto.fn.js"></script>
+	<script type="text/javascript">
+	//定义全局宽度
+	
+	
+
+	// $(function(){
+		
+	// 	_width=$('#searcher-container').width();alert(_width);
+	// 	setframe();
+	// 	drawImg(_width,'.goods_container');
+
+	// })
+	// $(window).on('resize',function(){
+	// 	setframe();
+	// 	_width=$('#searcher-container').width();
+	// 	drawImg(_width,'.goods_container');
+	// });
+
+	// function setframe(){
+		
+	// 	_navHeight=$('.col-xs-nav').height();
+	// 	alert(_width);
+	// 	$('#ul_carousel').height(parseInt(_width*0.523));
+	// 	$('.img_index').css({left:_width/2,bottom:1})
+	// 	$('.lGoods').height(parseInt(_width*0.39));
+	// 	$('.sGoods').height(sgh=parseInt(_width/2*1.098));
+	// 	$('.goods_container').last().css('marginBottom',1.1*_navHeight);
+	// 	//调页面处理函数
+	// 	setPageEvents();
+	// }
+	// 
+	// 
+	var _width=$('.goods_container').width();
+	var _navHeight=$('.col-xs-nav').height();
+	$(function(){
+		setframe();
+		setPageEvents();
+		drawImg(_width,'.goods_container');
+		
+	})
+	$(window).on('resize',function(){
+		setframe();
+		_width=$('.goods_container').width();
+		drawImg(_width,'.goods_container');
+	});
+	function setframe(){
+		_width=$('.goods_container').width();
+		_navHeight=$('.col-xs-nav').height();
+		$('#ul_carousel').height(parseInt(_width*0.523));
+	 	$('.img_index').css({left:_width/2,bottom:1})
+		$('.lGoods').height(parseInt(_width*0.39));
+		$('.sGoods').height(parseInt(_width/2*1.098));
+		$('.goods_container').last().css('marginBottom',1.1*_navHeight);
+	}
+
+
+	</script>
+	
+</head>
+<body>
+<!-- header -->
+<div class="container-fluid" id="header_container">
+  <div class="row">
+    <div class="col-xs-12">
+    	<div class="header">
+    		<div class="backwards"><a href="#"><i class="icon-chevron-thin-left"></i></a></div>
+			<div class="logo">
+				<div id="logo">
+				<img src="img/logo1.png"/></div>
+			</div>
+			<div class="dl">
+				<button id="dlBtn"><img src="img/DL1-1.png"></button>
+			</div>
+    	</div>
+    </div>
+</div>
+</div>
+
+<!-- container -->
+
+<div class="container-fluid main_container">
+	<div class="row" >
+		<div class="col-xs-12 col-md-6 col-md-offset-3">
+		<!-- search -->
+			<div id="searcher-container">
+			<form id="search">
+  					<input type="text" id="searchText" name="searchText"/>
+  					<button id="search-btn"><i class="icon-search"></i></button>
+  			</form>
+			</div>
+			<!-- carousel -->
+			<div id="img_carousel">
+			<ul id="ul_carousel">
+				<li class="li_carousel" style="opacity:1;display:block;"><a href="#"><img src="img/11.jpg" alt="" class="imgscoll"></a></li>
+				<li class="li_carousel"><a href="#"><img src="img/12.jpg" alt="" class="imgscoll"></a></li>
+
+				<div class="img_index">
+					<span class="current cir"></span>
+					<span class="cir"></span>
+				</div>
+			</ul>
+			</div>
+
+			<!-- nav_container -->
+			<div id="nav_container">
+				<div class="col-xs-nav">
+					<dl id="goodsSort">
+						<dt><i class="icon-menu"></i></dt>
+						<dd>商品分类</dd>
+					</dl>
+				</div>
+				<div class="col-xs-nav">
+					<dl id="recommend">
+						<dt><i class="icon-heart-stroke"></i></dt>
+						<dd>推荐特产</dd>
+					</dl>
+				</div>
+				<div class="col-xs-nav">
+					<dl id="myself">
+						<dt><i class="icon-user"></i></dt>
+						<dd>我的特产</dd>
+					</dl>
+				</div>
+				<div class="col-xs-nav">
+					<dl id="collect">
+						<dt><i class="icon-star-empty"></i></dt>
+						<dd>我的收藏</dd>
+					</dl>
+				</div>
+			</div>
+
+		<!-- goods_container_1 -->
+			<div class="goods_container" id="goods_container_1">
+				<div class="box_goods">
+				<div class="tiltle">新品上市</div>
+				<div class="lGoods">
+
+				</div>
+				<div class="sGoods">
+					
+				</div>
+				<div class="sGoods">
+					
+				</div>
+				<div class="sGoods">
+					
+				</div>
+				<div class="sGoods">
+					
+				</div>
+				</div>
+			</div> 
+			<div class="goods_container" id="goods_container_2">
+				<div class="box_goods">
+				<div class="tiltle">新品上市</div>
+				<div class="lGoods">
+
+				</div>
+				<div class="sGoods">
+					
+				</div>
+				<div class="sGoods">
+					
+				</div>
+				<div class="sGoods">
+					
+				</div>
+				<div class="sGoods">
+					
+				</div>
+				</div>
+			</div> 
+			</div>
+
+<!-- footer -->
+<div class="container-fluid" id="footer_container">
+	<div class="row">
+				<div class="col-xs-nav col-xs-nav2">
+					<dl id="foot_person">
+						<dt><i class="icon-user"></i></dt>
+						<dd>个人中心</dd>
+					</dl>
+				</div>
+				<div class="col-xs-nav col-xs-nav2">
+					<dl id="goods_sort">
+						<dt><i class="icon-paragraph-left"></i></dt>
+						<dd>商品分类</dd>
+					</dl>
+				</div>
+				<div class="col-xs-nav col-xs-nav2">
+					<dl id="my_collect">
+						<dt><i class="icon-heart-stroke"></i></dt>
+						<dd>我的收藏</dd>
+					</dl>
+				</div>
+				<div class="col-xs-nav col-xs-nav2">
+					<dl id="browsing_history">
+						<dt><i class="icon-history"></i></dt>
+						<dd>浏览记录</dd>
+					</dl>
+				</div>
+	</div>
+</div>
+
+<!-- script -->
+
+<script type="text/javascript" src="js/zepto/touch.js"></script>
+<script type="text/javascript" src="js/zepto/fx.js"></script>
+<script type="text/javascript" src="js/index4.js"></script>
+</body>
+</html>
